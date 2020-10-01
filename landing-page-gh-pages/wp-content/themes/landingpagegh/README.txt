@@ -1,6 +1,7 @@
 TO DO LIST:
 -----------
 
+- Organizing the template hierarchy ===========DONE============
 - Register and enqueue styles and scripts for displaying the header and the footer 
 - Create template parts 
 - Create menus 
