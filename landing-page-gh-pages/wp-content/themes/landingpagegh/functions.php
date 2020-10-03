@@ -23,7 +23,7 @@ if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) ) {
 /**
  * Includes
  */
-
+include( get_theme_file_path( '/includes/front/enqueue.php' ) );
 
 
 
@@ -31,7 +31,7 @@ if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) ) {
 /**
  * Hooks
  */
-
+add_action( 'wp_enqueue_scripts', 'landing_page_gh_enqueue' );
 
 
 /**
