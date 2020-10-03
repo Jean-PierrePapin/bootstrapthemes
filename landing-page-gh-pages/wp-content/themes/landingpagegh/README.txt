@@ -3,7 +3,7 @@ TO DO LIST:
 
 - Organizing the template hierarchy ===========DONE============
 - Register and enqueue styles and scripts for displaying the header and the footer 
-- Create template parts 
+- Create template parts ==========DONE============
 - Create menus 
 - Use the customizer to do a custom menu, header, each CPT with the title and subtitle... 
 - Create custom post types (CPT) for Services, Portfolio, About, Team  
