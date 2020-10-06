@@ -23,6 +23,10 @@ if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) ) {
 /**
  * Includes
  */
+
+// customizer file
+require_once get_template_directory() . '/includes/front/customizer.php';
+
 include( get_theme_file_path( '/includes/front/enqueue.php' ) );
 
 
@@ -33,6 +37,8 @@ include( get_theme_file_path( '/includes/front/enqueue.php' ) );
  */
 add_action( 'wp_enqueue_scripts', 'landing_page_gh_enqueue' );
 
+
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Shortcodes
