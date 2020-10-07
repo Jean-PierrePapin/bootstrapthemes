@@ -5,7 +5,7 @@ TO DO LIST:
 - Register and enqueue styles and scripts for displaying the header and the footer ========DONE========
 - Create template parts ==========DONE============
 - Use the customizer to do a custom menu, header, each CPT with the title and subtitle... 
-- Create custom post types (CPT) for Services, Portfolio, About, Team  
+- Create custom post types (CPT) for testimonials and image showcases =====DONE========  
 - Create a PHP file for the required plugins for the WP theme 
 - Create Gutenberg blocks for certain CPTs with font and styles
 - Display CPTs with the Loop 
