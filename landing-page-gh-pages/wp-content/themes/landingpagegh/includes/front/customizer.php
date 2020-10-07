@@ -308,5 +308,57 @@ function landing_page_customizer( $wp_customize ) {
     /*------------------------------------------------------*/
     /*------------------------------------------------------*/
 
+    /** 
+     * Call to action Section 
+     */ 
+    $wp_customize->add_section(
+        'sec_cta', [
+            'title'                 =>  __( 'CTA Settings', 'landing-page-gh-pages' ),
+            'description'           =>  __( 'CTA Section', 'landing-page-gh-pages' )
+        ]
+    );
+
+    // Field 1 - CTA title  box
+    $wp_customize->add_setting(
+        'set_cta_title', [
+            'type'                  =>  'theme_mod',
+            'default'               =>  '',
+            'sanitize_callback'     =>  'sanitize_text_field'  
+        ]
+    );
+
+    $wp_customize->add_control(
+        'set_cta_title', [
+            'label'                 =>  __( 'CTA Title', 'landing-page-gh-pages' ),
+            'description'           =>  __( 'Please, add your CTA title below', 'landing-page-gh-pages' ),
+            'section'               =>  'sec_cta',
+            'type'                  =>  'text'
+        ]
+    );
+
+    // Field 2 - CTA sign up box
+    $wp_customize->add_setting(
+        'set_cta_signup_title', [
+            'type'                  =>  'theme_mod',
+            'default'               =>  '',
+            'sanitize_callback'     =>  'sanitize_text_field'  
+        ]
+    );
+
+    $wp_customize->add_control(
+        'set_cta_signup_title', [
+            'label'                 =>  __( 'CTA Title', 'landing-page-gh-pages' ),
+            'description'           =>  __( 'Please, add your CTA title below', 'landing-page-gh-pages' ),
+            'section'               =>  'sec_cta',
+            'type'                  =>  'text'
+        ]
+    );
+
+
+    /*------------------------------------------------------*/
+    /*------------------------------------------------------*/
+
+    
+
 }
 add_action( 'customize_register', 'landing_page_customizer' );
