@@ -30,10 +30,14 @@
 
 					<div class="row no-gutters">
 						<div class="col-lg-6 order-lg-2 text-white showcase-img">
-							<img src="<?php echo get_the_post_thumbnail(); ?>" alt="">
+							<?php echo get_the_post_thumbnail(
+								$query->post_id,
+								[],
+								['class' => 'img-fluid']
+							); ?>
 						</div>
 						<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-							<h2><?php echo get_the_title(); ?></h2>
+							<h2 class="ml-4"><?php echo get_the_title(); ?></h2>
 							<p class="lead mb-0">
 								<?php echo get_the_content(); ?>
 							</p>
@@ -47,10 +51,14 @@
 
 					<div class="row no-gutters">
 						<div class="col-lg-6 text-white showcase-img" >
-							<img src="<?php echo get_the_post_thumbnail(); ?>" alt="">
+							<?php echo get_the_post_thumbnail(
+								$query->post_id,
+								[],
+								['class' => 'img-fluid']
+							); ?>
 						</div>
 						<div class="col-lg-6 my-auto showcase-text">
-							<h2><?php echo get_the_title(); ?></h2>
+							<h2 class="ml-4"><?php echo get_the_title(); ?></h2>
 							<p class="lead mb-0">
 								<?php echo get_the_content(); ?>
 							</p>

@@ -13,7 +13,7 @@
      */
 
     // Register styles
-    wp_register_style( 'landing_page_gh_pages', $uri . '/assets/css/landing-page.min.css' );
+    wp_register_style( 'landing_page_gh_pages', $uri . '/assets/css/landing-page.css' );
     // Google fonts
     wp_register_style( 'landing_page_gh_googlefont', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' );
     //Custom fonts

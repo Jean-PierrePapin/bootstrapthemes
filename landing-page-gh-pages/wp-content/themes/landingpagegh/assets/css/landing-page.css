@@ -4,7 +4,11 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
-body {
+
+/*
+* General HTML style
+*/
+ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -18,6 +22,9 @@ h6 {
   font-weight: 700;
 }
 
+/*
+* Header style
+*/
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -51,6 +58,9 @@ header.masthead h1 {
   }
 }
 
+/*
+* Image showcase style
+*/
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -87,6 +97,14 @@ header.masthead h1 {
   font-size: 5rem;
 }
 
+section.showcase .container-fluid.p-0 .row.no-gutters .col-lg-6.order-lg-2.text-white.showcase-img img {
+  max-width: 759.6px;
+}
+
+/*
+* Testimonial style
+*/
+
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -100,6 +118,11 @@ header.masthead h1 {
   max-width: 12rem;
   box-shadow: 0px 5px 5px 0px #adb5bd;
 }
+
+
+/*
+* Call to action style
+*/
 
 .call-to-action {
   position: relative;
@@ -119,6 +142,10 @@ header.masthead h1 {
   left: 0;
   opacity: 0.3;
 }
+
+/*
+* Footer style
+*/
 
 footer.footer {
   padding-top: 4rem;
